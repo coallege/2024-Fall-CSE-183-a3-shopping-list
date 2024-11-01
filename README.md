@@ -44,7 +44,7 @@ You should only modify the following files:
 - `models.py`
 
 To implement the app, you should follow these steps:
-- First, define in `models.py` the database model for the shopping list. Make sure you store whether items are checked, and to which user they belong. 
+- First, define in `models.py` the database model for the shopping list. Make sure you store whether items are checked, and to which user they belong.
 - In `controllers.py`, create the necessary routes to handle the shopping list, including:
   - loading the item list;
   - adding an item;
