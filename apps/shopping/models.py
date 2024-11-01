@@ -16,7 +16,7 @@ def get_time():
 # should we allow duplicate product names?
 # I guess so.
 fld_product_name = Field(
-    "product_name",
+    "name",
     type="string",
     requires=IS_NOT_EMPTY()
 )
@@ -24,6 +24,12 @@ fld_product_name = Field(
 fld_checked = Field(
     "checked",
     type="boolean",
+    requires=IS_NOT_EMPTY()
+)
+
+fld_order = Field(
+    "order",
+    type="integer",
     requires=IS_NOT_EMPTY()
 )
 
@@ -37,6 +43,7 @@ fkey_user_id = Field(
 db.define_table('shopping_list',
     fld_product_name,
     fld_checked,
+    fld_order,
     fkey_user_id,
 )
 
